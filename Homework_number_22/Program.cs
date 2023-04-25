@@ -15,7 +15,7 @@ namespace Homework_number_22
             int step = 1;
             int backNumber;
             int frontNumber;
-            int lastArrayIndex = numbers.Length - 1;
+            int lastIndexInArray = numbers.Length - 1;
 
             for (int i = 0; i < numbers.Length; i++)
             {
@@ -29,7 +29,7 @@ namespace Homework_number_22
                         Console.Write($"{numbers[i]},");
                     }
                 }
-                else if (i == lastArrayIndex)
+                else if (i == lastIndexInArray)
                 {
                     if (numbers[i] > numbers[backNumber])
                     {
